@@ -1,3 +1,47 @@
-h1 {
+$color1:blue;
+header{
+    height:40%;
+    background-image: url(bk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+.nav-item:hover {
+    background-color: rgb(185, 189, 185);
+
+}
+@media screen and (max-width: 650px) {
+    header {
+        background-image: url(https://www.publicdomainpictures.net/pictures/120000/velka/four-elements.jpg);
+
+    }
+}
+
+img {
+    width:90%;
+}
+.row {
+    padding:5%;
+
+}
+#footer {
+    text-align: center;
+}
+#footer > h6 {
+    color:black;
+}
+#footer h6:hover {
+   color:$color1;
+}
+#footer {
+    h6{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+%tablehead {
     color:green;
+    
+}
+th {
+    @extend %tablehead;
 }
